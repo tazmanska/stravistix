@@ -1,0 +1,7 @@
+
+{
+    "access_token"    :"yours"
+    , "client_id"     : "yours"
+    , "client_secret" : "yours"
+    , "redirect_uri"  :"http://localhost:3000"
+}

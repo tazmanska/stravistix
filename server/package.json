@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "description": "Make StravistiX distribution structure and builds archive",
+  "main": "make.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "strava-v3": "^1.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomaschampagne/stravistix"
+  },
+  "author": "Thomas Champagne",
+  "readme": "None"
+}
