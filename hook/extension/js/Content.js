@@ -180,6 +180,7 @@ var jsDependencies = [
     'modules/latlong.js',
     'modules/qrcode.min.js',
     'modules/vv.mapFlipper.js',
+    'modules/FileSaver.js',
     'js/processors/VacuumProcessor.js',
     'js/processors/ActivityProcessor.js',
     'js/processors/BikeOdoProcessor.js',
@@ -199,6 +200,7 @@ var jsDependencies = [
     'js/modifiers/ActivitiesSummaryModifier.js',
     'js/modifiers/ActivitySegmentTimeComparisonModifier.js',
     'js/modifiers/ActivityBestSplitsModifier.js',
+    'js/modifiers/ActivitiesExportModifier.js',
 
     // Extended data views
     'js/modifiers/extendedActivityData/views/AbstractDataView.js',

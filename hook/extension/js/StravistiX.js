@@ -65,6 +65,7 @@ StravistiX.prototype = {
         this.handleHidePremium_();
         this.handleHideFeed_();
         this.handleDisplayFlyByFeedModifier_();
+        this.handleActivitiesExportModifier_();
 
         // Bike
         this.handleExtendedActivityData_();
@@ -424,6 +425,18 @@ StravistiX.prototype = {
 
         var displayFlyByFeedModifier = new DisplayFlyByFeedModifier();
         displayFlyByFeedModifier.modify();
+    },
+    
+    handleActivitiesExportModifier_: function() {
+        // Test if where are on athlete/training page
+        if (!window.location.pathname.match(/^\/athlete\/training/)) {
+            return;
+        }
+
+        if (env.debugMode) console.log("Execute handleActivitiesExportModifier_()");
+
+        var activitiesExportModifier = new ActivitiesExportModifier();
+        activitiesExportModifier.modify();
     },
 
     /**
