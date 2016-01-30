@@ -226,18 +226,6 @@ StravistiX.prototype = {
         activitiesSummaryModifier.modify();
     },
 
-    handleActivitiesSummary: function() {
-        // If we are not on the athletes page then return...
-        if (!window.location.pathname.match(new RegExp("/athletes/" + this.athleteId_ + "$", "g"))) {
-            return;
-        }
-
-        if (env.debugMode) console.log("Execute handleActivitiesSummary()");
-
-        var activitiesSummaryModifier = new ActivitiesSummaryModifier();
-        activitiesSummaryModifier.modify();
-    },
-
     /**
      *
      */
